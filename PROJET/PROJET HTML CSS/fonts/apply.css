@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Bariol";
+    src: url("bariolbold.ttf");
+}
+@font-face {
+    font-family: "Bariolthin_italic";
+    src: url("bariolthin_italic.ttf");
+}
+@font-face {
+    font-family: "cooper";
+    src: url("cooperm.ttf");
+}
+Body {
+    background: linear-gradient(#ffffff, #cd0ef3);
+    min-height: 100vh;
+}
+/* header */
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    float: left;
+    margin-left: 10px;
+    font-family: "Bariol";
+    clear: both;
+}
+h1 a {
+    text-decoration: none;
+}
+h1 a:visited {
+    color: black;
+}
+h1 a:hover {
+    color: plum;
+}
+nav {
+    float: right;
+    margin-top: 10px;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    font-family: "Bariolthin_italic";
+}
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li a:visited {
+    color: black;
+}
+nav ul li a:hover {
+    color: plum;
+}
+
+/*DIC */
+.apply {
+    clear: both;
+    padding-top: 50px;
+    padding: 20px;
+    text-align: center;
+    font-family: "cooper";
+}
+
+/*SVG*/
+svg {
+    width: 25%;
+    height: 25%;    
+}
+.svg {
+    margin-left: 100px;
+}
+
+#barbec {
+    animation-name: barbec;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: center;
+}
+@keyframes barbec {
+    0% {
+        transform: translateY(0px) scaleY(1);
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-50px) scaleY(1.1);
+        opacity: 0.3;
+    }
+}
+
